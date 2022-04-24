@@ -1,0 +1,83 @@
+.card {
+    text-align: center;
+}
+
+.card div {
+    padding: 20px;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #732C02;
+}
+
+.iconesContato a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card h2 {
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px 1.5px #BF5B04;
+    margin: 10px;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1.5px solid #BF5B04;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+#loja {
+    width: 400px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 630px) {
+
+    .card img {
+        width: 50px;
+    }
+
+    #loja {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .card img {
+        width: 90px;
+    }
+
+    .iconesContato p {
+        display: none;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    #loja {
+        width: 100%;
+    }
+
+}

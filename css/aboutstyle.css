@@ -1,0 +1,79 @@
+.historia {
+    padding: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.historia span {
+    font-family: 'Ms Madi', cursive, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pilares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pilar {
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.meio {
+    border-left: 2px solid #732C02;
+    border-right: 2px solid #732C02;
+}
+
+.pilar h2 {
+    font-family: 'Ms Madi', cursive, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .historia {
+        font-size: 15px;
+    }
+
+    .historia span {
+        font-size: 20px;
+    }
+
+    .pilares {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .pilar {
+        border: 2px solid #732C02;
+        border-radius: 3px;
+        min-width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .historia {
+        font-size: 12px;
+    }
+
+    .historia span {
+        font-size: 16px;
+    }
+
+    .pilar {
+        font-size: 13px;
+    }
+
+    .pilar h2 {
+        font-size: 35px;
+    }
+
+}

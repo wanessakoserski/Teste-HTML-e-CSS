@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Overpass:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #732C02;
+    padding: 55px;
+    font-family: 'Overpass', Helvetica, sans-serif;
+}
+
+header {
+    border-radius: 49% 49% 0% 0%;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.12), -3px -4px 5px rgba(0, 0, 0, 0.15);
+}
+
+#titulo {
+    background-image: linear-gradient(#BF5B04,  #BF5B04, #F29441,  #BF5B04);
+    font-family: 'Ms Madi', cursive, Helvetica, sans-serif;
+    border-radius: 50% 50% 0% 0%;
+    padding: 54px 10px 10px 10px;
+    text-align: center;
+    color: #732C02;
+    font-size: 1.8rem;
+    font-size: 3vw;
+    text-shadow: 1.5px 1.5px 1.5px #BF5B04;
+}
+
+#nav {
+    background-color: #F29441;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#nav a {
+    width: 100%;
+    text-align: center;
+    color: #732C02;
+    font-weight: bold;
+    padding: 5px 3px 2px 3px;
+    transition: background-color 0.2s;
+}
+
+#nav a:hover {
+    background-color: #BF5B04;
+    color: #F29441;
+
+}
+
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #F29441;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05), -4px -4px 5px rgba(0, 0, 0, 0.05);
+    color: #732C02;
+}
+
+.left {
+    float: left;
+    width: 64%;
+    
+}
+
+.right {
+    float: right;
+    width: 34%;
+}
+
+.icone {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.icone img {
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+}
+
+.icone #legenda {
+    position: absolute;
+    height: 50px;
+    width: 180px;
+    background-color: #F20530;
+    color: white;
+    margin-top: 13px;
+    margin-left: 20px;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    opacity: 0;
+}
+
+.icone img:hover + #legenda {
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        padding: 37px;
+    }
+
+    .icone img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icone img:hover + #legenda {
+        transition: opacity 0.3s;
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    body {
+        padding: 27px;
+    }
+
+    #titulo {
+        font-size: 15px;
+    }
+
+    #nav {
+        display: block;
+        
+    }
+
+    #nav a {
+        display: block;
+        width: 100%;
+    }
+
+    .icone img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .icone img:hover + #legenda {
+        transition: opacity 0.3s;
+        opacity: 0;
+    }
+
+}
+
+/* Menor tamanho de tela encontrado nos teste foi de width=280 [Galaxy Fold] */
